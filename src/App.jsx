@@ -1,16 +1,22 @@
-import ToggleExample from "./components/ToggleExample"
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import ToggleExample from "./pages/ToggleExample";
+import LocalStorageExample from "./pages/LocalStorageExample";
 
 function App() {
-
-
   return (
-    <div className="min-h-screen p-10 bg-gray-50">
-      <h1 className="text-3xl font-bold mb-6 text-center text-blue-700">
-        #MaHooks ✨
-      </h1>
-      <ToggleExample />
+    <div className="min-h-screen bg-gray-100 text-gray-900">
+      <Navbar />
+      <main className="p-6 max-w-4xl mx-auto">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/toggle" element={<ToggleExample />} />
+          <Route path="/localstorage" element={<LocalStorageExample />} />
+        </Routes>
+      </main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
