@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import ToggleExample from "./pages/ToggleExample";
 import LocalStorageExample from "./pages/LocalStorageExample";
 import PreviousExample from "./pages/PreviousExample";
+import FetchExample from "./pages/FetchExample";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/toggle" element={<ToggleExample />} />
           <Route path="/localstorage" element={<LocalStorageExample />} />
           <Route path="/previousexample" element={<PreviousExample />} />
+          <Route path="/fetch" element={<FetchExample />} />
         </Routes>
       </main>
     </div>

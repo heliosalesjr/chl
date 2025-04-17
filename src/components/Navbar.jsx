@@ -35,6 +35,14 @@ const Navbar = () => {
       >
         usePrevious
       </NavLink>
+      <NavLink
+        to="/fetch"
+        className={({ isActive }) =>
+          isActive ? "text-blue-600 font-semibold" : "text-gray-700"
+        }
+      >
+        useFetch
+      </NavLink>
     </nav>
   );
 };
