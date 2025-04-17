@@ -27,6 +27,14 @@ const Navbar = () => {
       >
         useLocalStorage
       </NavLink>
+      <NavLink
+        to="/previousexample"
+        className={({ isActive }) =>
+          isActive ? "text-blue-600 font-semibold" : "text-gray-700"
+        }
+      >
+        usePrevious
+      </NavLink>
     </nav>
   );
 };

@@ -14,7 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/toggle" element={<ToggleExample />} />
           <Route path="/localstorage" element={<LocalStorageExample />} />
-          <Route path="/previousExample" element={<PreviousExample />} />
+          <Route path="/previousexample" element={<PreviousExample />} />
         </Routes>
       </main>
     </div>
