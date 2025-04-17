@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import ToggleExample from "./pages/ToggleExample";
 import LocalStorageExample from "./pages/LocalStorageExample";
+import PreviousExample from "./pages/PreviousExample";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/toggle" element={<ToggleExample />} />
           <Route path="/localstorage" element={<LocalStorageExample />} />
+          <Route path="/previousExample" element={<PreviousExample />} />
         </Routes>
       </main>
     </div>
