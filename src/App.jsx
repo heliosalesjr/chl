@@ -5,6 +5,8 @@ import ToggleExample from "./pages/ToggleExample";
 import LocalStorageExample from "./pages/LocalStorageExample";
 import PreviousExample from "./pages/PreviousExample";
 import FetchExample from "./pages/FetchExample";
+import EventListenerExample from "./pages/EventListenerExample";
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
           <Route path="/localstorage" element={<LocalStorageExample />} />
           <Route path="/previousexample" element={<PreviousExample />} />
           <Route path="/fetch" element={<FetchExample />} />
+          <Route path="/eventlistener" element={<EventListenerExample />} />
         </Routes>
       </main>
     </div>

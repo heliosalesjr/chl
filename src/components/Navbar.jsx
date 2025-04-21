@@ -43,6 +43,16 @@ const Navbar = () => {
       >
         useFetch
       </NavLink>
+      
+      <NavLink
+        to="/eventlistener"
+        className={({ isActive }) =>
+          isActive ? "text-blue-600 font-semibold" : "text-gray-700"
+        }
+      >
+        useEventListener
+      </NavLink>
+      
     </nav>
   );
 };
